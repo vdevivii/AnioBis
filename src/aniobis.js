@@ -3,7 +3,11 @@ function esBisiesto(anio) {
         return true;
     } else if (anio % 100 === 0) {
         return false;
-    } 
+    } else if (anio % 4 === 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 
