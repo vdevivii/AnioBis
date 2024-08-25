@@ -20,6 +20,12 @@ describe('Años bisiestos', () => {
       expect(esBisiesto(2012)).toBe(true);
       expect(esBisiesto(2016)).toBe(true);
     });
+
+    test('Un año no divisible por 4 no es bisiesto', () => {
+        expect(esBisiesto(1999)).toBe(false);
+        expect(esBisiesto(2001)).toBe(false);
+        expect(esBisiesto(2002)).toBe(false);
+      });
   
 
 });
